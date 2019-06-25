@@ -11,7 +11,7 @@ import thunk from "redux-thunk";
 // Config firebase
 import { reduxFirestore, getFirestore } from "redux-firestore";
 import { reactReduxFirebase, getFirebase } from "react-redux-firebase";
-import fbConfig from './config/fbConfig'
+import fbConfig from "./config/fbConfig";
 
 const store = createStore(
   rootReducer,
