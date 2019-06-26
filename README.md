@@ -18,7 +18,7 @@ You will also see any lint errors in the console.
 
 ### `Access project oneline`
 
-Go to [matioplan project](https://marioplan-8fab9.firebaseapp.com/signin).<br>
+Go to [marioplan project](https://marioplan-8fab9.firebaseapp.com/signin).<br>
 YOu can create your account, login, Add project etc.
 
 ## Learn More
