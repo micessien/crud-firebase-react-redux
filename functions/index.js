@@ -14,6 +14,7 @@ const createNotification = notification => {
     .then(doc => console.log("notifcation added", doc));
 };
 
+// Triggers for procject creation
 exports.projectCreated = functions.firestore
   .document("projects/{projectId}")
   .onCreate(doc => {
@@ -27,3 +28,22 @@ exports.projectCreated = functions.firestore
 
     return createNotification(notification);
   });
+
+// Triggers for new user jointed plateform
+exports.userJoined = functions.auth.user().onCreate(user => {
+  return admin
+    .firestore()
+    .collection("users")
+    .doc(user.uid)
+    .get()
+    .then(doc => {
+      const newUser = doc.data();
+      const notification = {
+        content: "Joined the party",
+        user: `${newUser.firstName} ${newUser.lastName}`,
+        time: admin.firestore.FieldValue.serverTimestamp()
+      };
+
+      return createNotification(notification);
+    });
+});
