@@ -1,6 +1,7 @@
 import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
+import "firebase/database";
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
@@ -12,6 +13,7 @@ var firebaseConfig = {
   messagingSenderId: "775830023493",
   appId: "1:775830023493:web:ca68a9e3f33ea388"
 };
+
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 // firebase.firestore().settings({ timestampsInSnapshots: true });
