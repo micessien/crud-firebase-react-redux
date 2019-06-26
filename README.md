@@ -41,3 +41,15 @@ To learn Firebase, check out the [Firebase documentation](https://firebase.googl
 ### Materialize
 
 To learn Materialize, check out the [Materialize documentation](https://materializecss.com/).
+
+
+## Importants
+
+### Package version
+
+react-redux: ^5.1.1 <br>
+react-redux-firebase : ^2.2.6
+
+### Tuto follow
+
+Awesome guy [The Net Ninja](https://twitter.com/thenetninjauk).
